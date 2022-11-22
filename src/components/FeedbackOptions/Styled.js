@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-export const ButtonList = styled.ul`
+
+export const FeedbackWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   list-style: none;
@@ -7,13 +8,17 @@ export const ButtonList = styled.ul`
   margin: 0;
 `;
 
-export const ButtonItem = styled.li`
-  margin-right: 30px;
-`;
+// export const ButtonItem = styled.li`
+//
+// `;
 
 export const Button = styled.button`
-  width: 100%;
+  min-width: 60px;
+  margin-right: 30px;
   padding: 15px;
   font-size: 20px;
   font-weight: bold;
+  &:active {
+    background-color: blue;
+  }
 `;
